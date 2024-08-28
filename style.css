@@ -1,0 +1,119 @@
+/* General Styles */
+.blue-bg {
+    background-color: rgb(107, 153, 218);
+    height: 85vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.coral-img {
+    width: 50%;
+    max-width: 400px;
+    position: absolute;
+    bottom: 0; /* Fix to bottom */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.fish-img1, .fish-img2 {
+    width: 20%;
+    max-width: 200px;
+    position: absolute;
+}
+
+.fish-img1 {
+    top: 10%;
+    left: 85%;
+}
+
+.fish-img2 {
+    top: 70%;
+    left: 10%;
+}
+
+.myself {
+    margin-bottom: 10%;
+    font-family: "Alkatra", cursive;
+    font-size: 5vw;
+    color: rgb(13, 67, 142);
+    text-align: center;
+}
+
+.profpic {
+    border-radius: 50%;
+    width: 10vw;
+    height: 10vw;
+}
+
+#footer {
+    background-color: rgb(107, 153, 218);
+}
+
+.contact {
+    color: rgb(13, 67, 142) !important;
+}
+
+/* Style for the button in the "Keep in touch!" section */
+.position-relative .btn-primary {
+    background-color: rgb(13, 67, 142); /* Match the #contact color */
+    border-color: rgb(13, 67, 142); /* Ensure the border color matches */
+    color: white; /* Set text color to white */
+}
+
+/* Optional: Ensure button is properly styled on hover */
+.position-relative .btn-primary:hover {
+    background-color: rgb(107, 153, 218); /* Slightly darker shade for hover effect */
+    border-color: rgb(107, 153, 218); /* Match the hover border color */
+}
+
+/* Skills Section Styles */
+.skills .icon-square {
+    width: 100px; /* Adjust size of icons */
+    height: 100px; /* Adjust size of icons */
+}
+
+.skills img {
+    width: 80%; /* Adjust image size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.skills .fs-2 {
+    font-size: 1.5rem; /* Adjust font size */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .blue-bg {
+        height: 60vh;
+    }
+
+    .coral-img {
+        width: 70%;
+        max-width: 300px; /* Adjust as needed */
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .fish-img1, .fish-img2 {
+        width: 15%;
+        max-width: 150px; /* Adjust as needed */
+    }
+
+    .myself {
+        font-size: 4vw;
+    }
+
+    .profpic {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .position-relative .btn-primary {
+        padding: 10px 20px;
+    }
+}

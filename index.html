@@ -4,21 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Vihanga T's Portfolio</h1>
-    <h2>I'm a Web Developer</h2>
-    <hr/>
-    <h3><a href="./public/movie-ranking.html">Movie Ranking Project</a></h3>
-    <img src="./assets/images/movie-ranking.png" height="200" alt="Screenshot of a Movie Ranking Project"/>
+    <section class="blue-space">
+        <div class="blue-bg">
+          <img src="./assets/images/fish.png" class="fish-img1">
+          <p class="myself d-flex justify-content-center align-items-center">I'm a <br>programmer</p>
+          <img src="./assets/images/coral.png" class="coral-img">
+          <img src="./assets/images/fish.png" class="fish-img2">
 
-    <h3><a href="./public/birthday-invite.html">Birthday Invite Project</a></h3>
-    <img src="./assets/images/birthday-invite.png" height="200" alt="Screenshot of a Movie Ranking Project"/>
+        </div>
+    </section>
+    
+    <section class="profile">
+    <div class="px-4 pt-5 my-5 text-center">
+        <img class="d-block mx-auto mb-4 profpic" src="./assets/images/20222049.png" alt="" width="170">
+        <h1 class="display-5 fw-bold text-body-emphasis">Hello World!</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">I am a Web Developer. I'm Currently Studying at IIT, Sri Lanka. <br>I ❤️ to work with People. </p>
+          
+        </div>
+      </div>
+    </section>
 
-    <hr/>
+    <section class="skills">
+        <div class="container px-4 pb-5" id="hanging-icons">
+            <h2 class="pb-2 border-bottom">Skills</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-1">
+              <div class="col d-flex align-items-start">
+                <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <img src="./assets/images/coding 1.gif" width="200">    
+                </div>
+                <div>
+                  <h3 class="fs-2 text-body-emphasis">Designing & Developmnet</h3>
+                  <p>Though I started coding later, I quickly grew passionate about it. Over time, I’ve developed my skills in designing and building mobile and web applications, focusing on creating user-friendly, functional, and visually appealing solutions. I continue to learn and adapt, keeping up with new technologies to improve my work.</p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <img src="./assets/images/problem solving.gif" width="200">    
+                </div>
+                <div>
+                  <h3 class="fs-2 text-body-emphasis">Problem Solving & Debugging</h3>
+                  <p>Throughout my coding journey, I've encountered numerous challenges that have sharpened my problem-solving abilities. Whether it’s fixing bugs or optimizing code performance, I enjoy breaking down complex issues and finding efficient solutions. My experience troubleshooting both front-end and back-end problems has enhanced my debugging skills, enabling me to deliver high-quality, functional applications.</p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <img src="./assets/images/using git.gif" width="200">    
+                </div>
+                <div>
+                  <h3 class="fs-2 text-body-emphasis">Collaboration & Version Control</h3>
+                  <p>Working on various team projects, I have become proficient in collaboration using tools like Git and GitHub. I am experienced in branching, merging, and managing codebases, ensuring that all team members can work effectively together. My understanding of version control has been crucial in maintaining the integrity and organization of projects while keeping everyone on the same page.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+    </section>
 
-    <a href="./public/about.html">About Me</a>
-    <a href="./public/contact.html">Contact Me</a>
+    <section class="contactSec">
+        <div class="position-relative p-5 text-center text-muted bg-body border border-dashed">
+            <p>😊</p>
+            <h1 class="text-body-emphasis contact">Keep in touch! </h1>
+            <p class="col-lg-6 mx-auto mb-4">
+              Wanna have fun Working with me? Let's eat HTML, CSS, JS .We can code coffee ! 🍵
+            </p>
+            <button class="btn btn-primary px-5 mb-5" type="button">
+              Contact ME!
+            </button>
+          </div>
+    </section>
+
+    <section id="footer">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+              <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+              </a>
+              <span class="mb-3 mb-md-0 text-body-secondary">© Vihanga Wijerathna , Inc</span>
+            </div>
+        
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+              <li class="ms-3"><a class="text-body-secondary" href="https://x.com/VihangaWij71519"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+              <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/thevihanga/"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+              <li class="ms-3"><a class="text-body-secondary" href="https://web.facebook.com/vihanga.theekshana.5/"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+            </ul>
+          </footer>
+    </section>
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="twitter" viewBox="0 0 16 16">
+            <path d="M5.026 15c6.034 0 9.334-5 9.334-9.334 0-.142 0-.283-.009-.423A6.674 6.674 0 0 0 16 3.542a6.552 6.552 0 0 1-1.889.517 3.3 3.3 0 0 0 1.445-1.822 6.583 6.583 0 0 1-2.083.797A3.292 3.292 0 0 0 7.87 5.569a9.321 9.321 0 0 1-6.765-3.418A3.278 3.278 0 0 0 2.164 6.3a3.296 3.296 0 0 1-1.487-.411v.041a3.296 3.296 0 0 0 2.64 3.225 3.276 3.276 0 0 1-.868.115c-.213 0-.423-.021-.63-.06a3.294 3.294 0 0 0 3.071 2.281A6.586 6.586 0 0 1 1 13.295a9.33 9.33 0 0 0 5.026 1.48"/>
+        </symbol>
+        <symbol id="instagram" viewBox="0 0 16 16">
+            <path d="M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13Zm0 11.875a5.375 5.375 0 1 1 0-10.75 5.375 5.375 0 0 1 0 10.75Zm3.375-6.5a.75.75 0 0 1-.75.75h-1.5a.75.75 0 0 1-.75-.75v-1.5a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 .75.75v1.5Zm-3.375 0a1.875 1.875 0 1 0 0-3.75 1.875 1.875 0 0 0 0 3.75Z"/>
+        </symbol>
+        <symbol id="facebook" viewBox="0 0 16 16">
+            <path d="M8 0C3.582 0 0 3.582 0 8c0 4.418 3.582 8 8 8a7.97 7.97 0 0 0 4.278-1.207l-.597-3.467A4.845 4.845 0 0 1 8 12.018a4.845 4.845 0 0 1-4.845-4.845c0-.823.145-1.606.408-2.313L2.704 1.014A7.97 7.97 0 0 0 8 0Zm1.122 4.162c-.029.29-.11.522-.248.694-.132.172-.339.26-.609.26h-1.13V5.158h1.383c.267 0 .474.091.637.272.163.182.224.427.173.723L9.155 8.54h-1.931v-1.26h-1.572v1.26H5.004V5.158h-.973v-.996h.973v-.55c0-.901.235-1.608.724-2.131.49-.524 1.134-.787 1.936-.787.331 0 .65.026.969.08.325.054.634.143.92.265v.996Zm.051 8.558c-.382 0-.731-.117-1.042-.347-.305-.226-.561-.515-.748-.86-.187-.348-.268-.709-.237-1.087.036-.398.201-.769.496-1.099.281-.319.649-.583 1.08-.783.427-.2.88-.304 1.343-.304.28 0 .566.036.84.106.282.072.54.179.767.324.226.146.415.327.563.53.139.204.235.431.284.678.048.248.08.495.092.743.016.26.009.516-.023.768-.03.253-.081.498-.152.742-.069.232-.171.461-.299.671-.132.218-.292.433-.482.627-.198.205-.419.381-.658.52-.254.142-.52.25-.79.322-.28.072-.572.107-.857.107Zm-1.379-2.348c-.138.283-.318.527-.537.727-.219.2-.468.361-.751.473-.278.105-.564.169-.853.186-.261.014-.514-.021-.758-.094-.247-.076-.48-.186-.696-.334-.214-.146-.401-.329-.561-.54-.146-.206-.258-.435-.335-.674-.085-.247-.12-.507-.104-.762.013-.259.082-.515.197-.758.124-.251.293-.48.506-.695.224-.22.485-.402.766-.54.281-.138.575-.248.872-.317.261-.058.524-.089.789-.086.253.001.504.035.748.104.239.068.464.167.663.299.208.131.392.289.546.47.152.186.274.39.358.605.084.221.137.45.158.683.013.232.01.466-.01.698-.025.257-.094.512-.2.764-.104.236-.251.464-.427.684-.18.232-.387.45-.611.654-.229.199-.487.37-.766.5-.288.135-.598.235-.915.295-.322.057-.643.065-.964.037-.266-.023-.527-.08-.772-.166-.232-.091-.464-.218-.683-.38-.211-.155-.388-.331-.532-.527-.147-.193-.267-.397-.35-.613-.082-.205-.125-.418-.134-.63-.01-.244.017-.485.077-.724.06-.245.16-.484.296-.712.136-.229.293-.454.471-.667.18-.214.375-.428.593-.635.227-.215.468-.411.727-.589.306-.212.637-.38.986-.498.351-.122.707-.172 1.065-.158.337.011.673.053 1.004.124.313.066.624.156.923.267.265.099.52.23.758.396.24.164.466.358.67.575.193.198.355.421.485.664.125.236.22.483.286.732.066.239.089.485.07.73-.019.263-.091.52-.212.768-.125.26-.281.504-.478.74-.195.232-.413.453-.662.664-.253.212-.521.404-.803.577-.282.159-.566.292-.855.405-.27.109-.553.191-.834.245-.242.046-.487.058-.732.03Z"/>
+        </symbol>
+    </svg>
+    
+    
 
 </body>
 </html>
